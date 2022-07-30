@@ -1,0 +1,24 @@
+<p>userlogin works!</p>
+<div class="login" #regForm="ngForm">
+    <form action="">
+      <h2 style="text-align: center;">LOG IN</h2>
+      <br>
+      <span>
+      <label  for="">USER ID</label>
+      <input [(ngModel)]="User.id" type="text" name="id">
+      <br>
+      <label for="" [(ngModel)]="User.password">PASSWORD</label>
+      <input type="password">
+      <br>
+      </span>
+      <button type="submit" (onClick)="login()" >SUBMIT</button>
+      <br>
+      <br>
+      <div class="login2">
+      <button>FORGOT PASSWORD</button>
+      <button>REGISTER</button>
+      <button>FORGOT ACCOUNT</button>
+    </div>
+    </form>
+  </div>
+
